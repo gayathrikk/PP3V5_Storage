@@ -17,8 +17,9 @@ import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 
-public class PP7v15 {
-	  @Test
+public class PP2V5 {
+
+	 @Test
 	    public void testStorageDetails() {
 	        // Set up SSH connection
 	        JSch jsch = new JSch();
@@ -27,7 +28,7 @@ public class PP7v15 {
 	        try {
 	            // Replace these with your SSH server details
 	            String user = "hbp";
-	            String host = "pp7v15.humanbrain.in";
+	            String host = "pp2v5.humanbrain.in";
 	            String password = "Health#123";
 	            int port = 22;
 
@@ -40,7 +41,7 @@ public class PP7v15 {
 	            // Execute command on SSH server
 	            Channel channel = session.openChannel("exec");
 	            // Command to retrieve storage details
-	            ((ChannelExec) channel).setCommand("df -h /store");
+	            ((ChannelExec) channel).setCommand("df -h /store/nvmestorage");
 	            channel.setInputStream(null);
 	            ((ChannelExec) channel).setErrStream(System.err);
 
@@ -108,7 +109,7 @@ public class PP7v15 {
 
 	    private void sendEmailAlert(String messageBody) {
 	        // Recipient's email ID needs to be mentioned.
-	        String[] to = {"karthik6595@gmail.com","annotation.divya@gmail.com", "gayathrigayu0918@gmail.com","nathan.i@htic.iitm.ac.in","venip@htic.iitm.ac.in", "lavanyabotcha@htic.iitm.ac.in"}; 
+	         String[] to = {"karthik6595@gmail.com","annotation.divya@gmail.com", "gayathrigayu0918@gmail.com","nathan.i@htic.iitm.ac.in","venip@htic.iitm.ac.in", "lavanyabotcha@htic.iitm.ac.in"}; 
 	       // String[] to = {"annotation.divya@gmail.com"}; 
 	        // Sender's email ID needs to be mentioned
 	        String from = "gayathri@htic.iitm.ac.in";
@@ -139,10 +140,10 @@ public class PP7v15 {
 	                message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
 	            }
 	            // Set Subject: header field
-	            message.setSubject("PP7V15.humanbrain.in - STORAGE ALERT ⚠️ ");
+	            message.setSubject("PP2V5.humanbrain.in - STORAGE ALERT ⚠️ ");
 	            // Set the actual message
 	            message.setText("This email has been automatically generated:\n" + messageBody + "Attention and Action Required 🚨\n" + messageBody
-	                    + "\nPP7V15 **scanner_7.1_nvmeShare** storage utilization has crossed 70% 🚫:\n" + messageBody);
+	                    + "\nPP2V5 **nvmeShare** storage utilization has crossed 70% 🚫:\n" + messageBody);
 	            System.out.println("sending...");
 	            // Send message
 	            Transport.send(message);

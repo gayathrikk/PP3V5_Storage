@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gayu.Gayathri.pp4v5">
+      <class name="com.gayu.Gayathri.pp1_Machine">
         <methods>
-          <include name="testStorageDetails"/>
+          <include name="setup"/>
+          <include name="afterTest"/>
+          <include name="userName"/>
+          <include name="Info"/>
+          <include name="Action"/>
         </methods>
-      </class> <!-- com.gayu.Gayathri.pp4v5 -->
+      </class> <!-- com.gayu.Gayathri.pp1_Machine -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
