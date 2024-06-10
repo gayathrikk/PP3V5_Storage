@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-07T15:39:00 IST" name="Default suite" finished-at="2024-06-07T15:39:09 IST" duration-ms="8718">
+  <suite started-at="2024-06-10T10:29:19 IST" name="Default suite" finished-at="2024-06-10T10:29:24 IST" duration-ms="4464">
     <groups>
     </groups>
-    <test started-at="2024-06-07T15:39:00 IST" name="Default test" finished-at="2024-06-07T15:39:09 IST" duration-ms="8718">
-      <class name="com.gayu.Gayathri.PP2V5">
-        <test-method signature="testStorageDetails()[pri:0, instance:com.gayu.Gayathri.PP2V5@2d710f1a]" started-at="2024-06-07T15:39:01 IST" name="testStorageDetails" finished-at="2024-06-07T15:39:09 IST" duration-ms="8580" status="PASS">
+    <test started-at="2024-06-10T10:29:19 IST" name="Default test" finished-at="2024-06-10T10:29:24 IST" duration-ms="4464">
+      <class name="com.gayu.Gayathri.pp3v5">
+        <test-method signature="testStorageDetails()[pri:0, instance:com.gayu.Gayathri.pp3v5@2d710f1a]" started-at="2024-06-10T10:29:20 IST" name="testStorageDetails" finished-at="2024-06-10T10:29:24 IST" duration-ms="4216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStorageDetails -->
-      </class> <!-- com.gayu.Gayathri.PP2V5 -->
+      </class> <!-- com.gayu.Gayathri.pp3v5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
